@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light theme (default) */
+body[data-theme="light"] {
+  --panel-bg: #ffffff;
+  --panel-fg: #111111;
+  background: #fafafa;
+  color: #111;
+}
+
+/* Dark theme */
+body[data-theme="dark"] {
+  --panel-bg: #1e1e1e;
+  --panel-fg: #eeeeee;
+  background: #121212;
+  color: #eee;
+}
