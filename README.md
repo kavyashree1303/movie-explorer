@@ -5,12 +5,6 @@ A responsive and accessible React + Vite web app that lets you search for movies
 > 🚀 **Live Demo:**  
 > 👉 https://686e9ef52cfdca125777dc69--cosmic-salamander-6af4f2.netlify.app/
 
----
-
-
-
----
-
 ## 🔍 Features
 
 - 🔎 Search movies by title (via OMDb API)
@@ -29,7 +23,7 @@ A responsive and accessible React + Vite web app that lets you search for movies
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/movie-explorer.git
+git clone https://github.com/kavyashree1303/movie-explorer.git
 cd movie-explorer
 2. Install Dependencies
 bash
@@ -54,7 +48,7 @@ bash
 Copy
 Edit
 npm run dev
-Visit http://localhost:5173
+
 
 🧪 Run Tests
 bash
@@ -79,13 +73,8 @@ Make sure your publish directory is dist.
 
 📄 Tech Stack
 React 19
-
 Vite
-
 Styled Components
-
 Axios
-
 OMDb API
-
 Netlify
