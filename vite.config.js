@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/movie-explorer/', // must match your repo name
+  // ↓ For Netlify the base should be root
+  base: '/',          // or simply delete this line
   plugins: [react()]
 });
