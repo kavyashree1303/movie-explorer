@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 
-/* ---------------- styled‑components ---------------- */
+
 
 const Overlay = styled.div`
   position: fixed;
@@ -34,7 +34,6 @@ const CloseBtn = styled.button`
   cursor: pointer;
 `;
 
-/* ---------------- component ---------------- */
 
 const MovieDetails = ({ movie, onClose }) => {
   // Do not render if no movie selected
@@ -43,16 +42,12 @@ const MovieDetails = ({ movie, onClose }) => {
   const panelRef = useRef(null);
   const closeBtnRef = useRef(null);
 
-  /* ------------ Escape key & focus trap ------------ */
   useEffect(() => {
-    // auto‑focus ❌ button for keyboard users
     closeBtnRef.current?.focus();
 
     const handleKey = (e) => {
-      // ESC key closes dialog
       if (e.key === 'Escape') onClose();
 
-      // Simple focus trap: keep Tab inside the panel
       if (e.key === 'Tab') {
         const focusables = panelRef.current.querySelectorAll(
           'a,button,[tabindex]:not([tabindex="-1"])'
@@ -76,7 +71,6 @@ const MovieDetails = ({ movie, onClose }) => {
     return () => document.removeEventListener('keydown', handleKey);
   }, [onClose]);
 
-  /* ------------ render ------------ */
   return (
     <Overlay onClick={onClose} data-testid="overlay">
       <Panel
