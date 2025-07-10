@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// 🔑  Replace with your real OMDb API key
 const API_KEY = '9ce0e50e';
 
 export const fetchMovies = async (query) => {
